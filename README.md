@@ -39,6 +39,7 @@ However, this project is not my daily occupation, so pull requests with improvem
 3. Multi-server (define multiple endpoints to visualise on 1 page)  
 4. Change chart color according to state  
 5. Use websocket to push changes (instead of pulling changes)  
+6. Add a small sound when a danger is triggered  
 
 # Choices  
 Some choices are made and have a profound impact.  
