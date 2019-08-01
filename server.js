@@ -7,7 +7,7 @@ const os = require('os');
 require('dotenv').config()
 
 app.get('/api', function(req, res) {
-    if(process.env.SITE_TOKEN){
+    if(req.query.token){
         if(req.query.token == process.env.SITE_TOKEN){
             let returndata = {};
             returndata.alerts = {};
@@ -46,9 +46,9 @@ app.get('/api', function(req, res) {
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/', function(req, res) {
-    if(process.env.SITE_TOKEN){
+    if(req.query.token){
         if(req.query.token == process.env.SITE_TOKEN){
-            res.sendFile(path.join(__dirname, 'build', 'index.html'));
+            res.sendFile(path.join(__dirname, 'build', 'entry.html'));
         }else{
             res.status(401).send('missing or incorrect token')
         }
