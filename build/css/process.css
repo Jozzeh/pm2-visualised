@@ -1,0 +1,48 @@
+/* Taking a component based css approach for this small project */
+.processelement{
+    min-width: 275px;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1; 
+    padding: 0;
+}
+    .processelement h2{
+        font-size: 16px;
+        font-weight: normal;
+        width: 100%;
+        min-width: 100%;
+        padding: 25px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: solid 1px #f1f1f1;
+    }
+        .processelement h2 span{
+            font-size: 10px;
+            color: #ccc;
+        }
+    .processelement .width50{
+        width: 50%;
+    }
+    .processelement .width100{
+        width: 100%;
+    }
+    .processelement .chartwrapper{
+        overflow: hidden;
+        height: 85px;
+    }
+    .processelement .textcontent{
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+        .processelement .textcontent span{
+            font-size: 10px;
+            color: #ccc;
+        }
+@media only screen and (max-width: 700px) {
+    .processelement{
+        max-width: 100%;
+    }
+}
+

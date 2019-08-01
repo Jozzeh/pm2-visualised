@@ -1,0 +1,30 @@
+{
+  "name": "pm2-visualised",
+  "version": "0.1.0",
+  "description": "Visualising metrics of all pm2 processes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jozzeh/pm2-visualised.git"
+  },
+  "keywords": [
+    "visualise",
+    "pm2",
+    "charts"
+  ],
+  "author": "Jos De Berdt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jozzeh/pm2-visualised/issues"
+  },
+  "homepage": "https://github.com/Jozzeh/pm2-visualised#readme",
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "pm2": "^3.5.1"
+  }
+}

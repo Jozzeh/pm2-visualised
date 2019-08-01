@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PM2 visualised</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+        <link href="/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="/css/main.css" rel="stylesheet" type="text/css">
+        <link href="/css/process.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="datacontent">
+            <h1>PM2 Visualised</h1>
+            <div id="warnings">
+                <div id="warningimg"><img src="/img/warning-sign.png" alt=""/><br/>Reset</div>
+                <div id="warningcontent">
+                    <ul id="warninglist">
+                    </ul>
+                </div>
+            </div>
+            <div id="system">
+                <div id="health" class="systemdiv"></div>
+                <div id="memory" class="systemdiv"></div>
+                <div id="cpuload" class="systemdiv"></div>
+            </div>
+            <div id="root"></div>
+        </div>
+
+        <footer>This visualisation has been brought to you by <a href="https://www.josdeberdt.be">Jos De Berdt</a></footer>
+        
+        <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+        <script src="/js/utility.js"></script>
+        <script src="/js/fetches.js"></script>
+        <script src="/js/errorprocess.js"></script>
+        <script src="/js/instanceprocess.js"></script>
+        <script src="/js/systemprocess.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
