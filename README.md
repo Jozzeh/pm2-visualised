@@ -26,7 +26,7 @@ SYSTEM_WARNING=75
 SYSTEM_DANGER=90  
 SYSTEM_POLL_DELAY=5  
 ```  
-With this env file, you're dashboard is available at <URL>:1337?token=ChangeThisTokenBecauseItIsNotVerySecure-123
+With this env file, you're dashboard is available at < YOUR URL >:1337?token=ChangeThisTokenBecauseItIsNotVerySecure-123
 
 
 # Roadmap  
@@ -44,13 +44,13 @@ However, this project is not my daily occupation, so pull requests with improvem
 # Choices  
 Some choices are made and have a profound impact.  
 
-Why does this project exist?  
+###### Why does this project exist?  
 Well, it's actually something I made to monitor one of my servers and to display some of the methodologies I know.  
 Also, I enjoy using PM2 (even though I use other node process managers as well in production projects).  
 PM2 has a lot more to offer than just process management, so do check out the features...  
 
-Why work with an API url and fetch the data in json format.  
+###### Why work with an API url and fetch the data in json format.  
 So others could easely integrate and consume this data. For example to create a native mobile app.  
 
-Why are there a bunch of different methodologies mixed, such as regular css and BEM/utility-first or promises and callback/setInterval?  
+###### Why are there a bunch of different methodologies mixed, such as regular css and BEM/utility-first or promises and callback/setInterval?  
 See first question...  
