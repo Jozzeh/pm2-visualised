@@ -3,6 +3,7 @@ body{
     font-size: 15px;
     color: #444;
     line-height: 1.2;
+    overflow-x: hidden;
 }
 div{
     box-sizing: border-box;
