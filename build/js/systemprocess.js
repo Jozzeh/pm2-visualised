@@ -15,7 +15,8 @@ class systemVisual {
     renderSystemMemory(data) {
         let memoryelement = document.getElementById("memory");
         let totalmemory = Math.floor(parseInt(data.system.totalmem) / 1048576);
-        let usedmemory = parseFloat(parseInt(data.system.totalmem) - parseInt(data.system.freemem) / 1048576).toFixed(2);
+        let usedbytesmemory = parseInt(data.system.totalmem) - parseInt(data.system.freemem);
+        let usedmemory = parseFloat(usedbytesmemory / 1048576).toFixed(2);
         let memoryscale = "Mb";
 
         if(totalmemory > 1024){
