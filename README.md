@@ -1,7 +1,5 @@
 # pm2-visualised
-A visualisation of all processes managed by PM2  
-
-This project aims to visualise all running PM2 processes on a server.  
+A visualisation of all processes managed by PM2 on a server.  
 
 # Installation  
 1. clone the directory  
@@ -28,6 +26,7 @@ SYSTEM_POLL_DELAY=5
 ```  
 With this env file, you're dashboard is available at < YOUR URL >:1337?token=ChangeThisTokenBecauseItIsNotVerySecure-123
 
+![PM2 monitoring dashboard by Jos De Berdt](https://www.josdeberdt.be/application/files/8315/6467/1660/pm2-monitoring-2-jdb.PNG "PM2 monitoring dashboard by Jos De Berdt")
 
 # Roadmap  
 Suggestions for this project can be made in the issues.  
