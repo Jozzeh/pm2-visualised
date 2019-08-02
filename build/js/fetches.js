@@ -14,7 +14,6 @@ class fetches{
         return fetch('/api?token='+token).then(result => {
             return result.json();
         }).then(json => {
-            console.log(json);
             return json;
         }).catch(error => {
             console.log('ERROR');
