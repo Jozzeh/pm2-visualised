@@ -31,7 +31,8 @@ class systemVisual {
             errorvisuals.addError("System memory dangerously low");
         }else if(percentagememory > data.alerts.warning){
             memoryelement.className = "bg-warning";
-            errorvisuals.addError("System memory low", "WARN");
+            // We are not logging low memory due to the differences of how OS's use or reserve their memory
+            // errorvisuals.addError("System memory low", "WARN");
         }else{
             memoryelement.className = "bg-success";
         }

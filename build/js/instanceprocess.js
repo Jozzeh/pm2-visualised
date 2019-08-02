@@ -150,7 +150,10 @@ class instanceVisual {
             if(elementsrendered.indexOf(divs[i].id) === -1){
                 //add log that this process has been removed
                 let processarray = divs[i].id.split('--');
-                if(processarray[1] != 0){
+                let processstopped = processarray[0]  + "--0--" + processarray[2];
+                if(elementsrendered.indexOf(processstopped) != -1){
+                    errorvisuals.addError(processarray[0] + " process has stopped! (id: " + processarray[2] + " - pid: " + processarray[1] + ")");
+                }else{
                     errorvisuals.addError(processarray[0] + " process has been removed! (id: " + processarray[2] + " - pid: " + processarray[1] + ")");
                 }
 
