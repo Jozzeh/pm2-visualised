@@ -18,8 +18,6 @@ class systemVisual {
         let usedmemory = parseFloat(parseInt(data.system.totalmem) - parseInt(data.system.freemem) / 1048576).toFixed(2);
         let memoryscale = "Mb";
 
-        console.log(usedmemory);
-
         if(totalmemory > 1024){
             totalmemory = parseInt(Math.floor(totalmemory / 1000));
             usedmemory = parseFloat(usedmemory / 1000).toFixed(2);
