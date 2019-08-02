@@ -123,7 +123,8 @@ class instanceVisual {
 
             let instanceelement = document.getElementById("instance--" + element.pid + "--" + element.pm_id);
             let statuselement = document.getElementById("status--" + element.pid + "--" + element.pm_id);
-            instanceelement.innerHTML = element.pm2_env.instances + " instances";
+            let instances = element.pm2_env.instances ? element.pm2_env.instances : 1;
+            instanceelement.innerHTML = instances + " instances";
             statuselement.innerHTML = element.pm2_env.status;
             if(element.pm2_env.status != "online"){
                 if(statuselement.classList.contains("color-success")){
