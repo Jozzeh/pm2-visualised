@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/Jozzeh/pm2-visualised#readme",
   "dependencies": {
-    "dotenv": "^8.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "pm2": "^3.5.1"
+    "pm2": "^3.5.2"
   }
 }
