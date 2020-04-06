@@ -24,6 +24,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "minimist": "^1.2.5",
     "pm2": "^3.5.2"
   }
 }
